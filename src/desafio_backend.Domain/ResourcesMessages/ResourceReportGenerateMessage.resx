@@ -126,20 +126,23 @@
   <data name="CASH" xml:space="preserve">
     <value>Dinheiro</value>
   </data>
+  <data name="COMMON_USER" xml:space="preserve">
+    <value>UsuÃ¡rio</value>
+  </data>
   <data name="CREDIT_CARD" xml:space="preserve">
-    <value>Cartão de crédito</value>
+    <value>CartÃ£o de crÃ©dito</value>
   </data>
   <data name="DATE" xml:space="preserve">
     <value>Data</value>
   </data>
   <data name="DEBIT_CARD" xml:space="preserve">
-    <value>Cartão de débito</value>
+    <value>CartÃ£o de dÃ©bito</value>
   </data>
   <data name="DESCRIPTION" xml:space="preserve">
-    <value>Descrição</value>
+    <value>DescriÃ§Ã£o</value>
   </data>
   <data name="ELETRONIC_TRANSFER" xml:space="preserve">
-    <value>Tranferência eletrônica</value>
+    <value>TranferÃªncia eletrÃ´nica</value>
   </data>
   <data name="EXPENSES_FOR" xml:space="preserve">
     <value>Despesas para</value>
@@ -148,10 +151,13 @@
     <value>Tipo de pagamento</value>
   </data>
   <data name="PAYMENT_TYPE_NOT_FOUND" xml:space="preserve">
-    <value>Método de pagamento não encontrado</value>
+    <value>MÃ©todo de pagamento nÃ£o encontrado</value>
+  </data>
+  <data name="SHOPKEEPER" xml:space="preserve">
+    <value>Lojista</value>
   </data>
   <data name="TITLE" xml:space="preserve">
-    <value>Título</value>
+    <value>TÃ­tulo</value>
   </data>
   <data name="TOTAL_SPENT_IN" xml:space="preserve">
     <value>Total gasto em {0}</value>

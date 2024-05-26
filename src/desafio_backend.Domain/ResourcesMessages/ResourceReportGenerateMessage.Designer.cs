@@ -88,6 +88,15 @@ namespace desafio_backend.Domain.ResourcesMessages {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Usuário.
+        /// </summary>
+        public static string COMMON_USER {
+            get {
+                return ResourceManager.GetString("COMMON_USER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Cartão de crédito.
         /// </summary>
         public static string CREDIT_CARD {
@@ -156,6 +165,15 @@ namespace desafio_backend.Domain.ResourcesMessages {
         public static string PAYMENT_TYPE_NOT_FOUND {
             get {
                 return ResourceManager.GetString("PAYMENT_TYPE_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Lojista.
+        /// </summary>
+        public static string SHOPKEEPER {
+            get {
+                return ResourceManager.GetString("SHOPKEEPER", resourceCulture);
             }
         }
         
