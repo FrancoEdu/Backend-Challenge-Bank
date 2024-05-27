@@ -1,0 +1,29 @@
+﻿using desafio_backend.Application.UseCase.Register;
+using desafio_backend.Communication.Requests.User;
+using desafio_backend.Communication.Response.Error;
+using desafio_backend.Communication.Response.User;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace desafio_backend.API.Controllers;
+[Route("api/user")]
+[ApiController]
+public class UserController : ControllerBase
+{
+    
+    private readonly IUserRegisterUseCase _userRegisterUseCase;
+
+    public UserController(IUserRegisterUseCase userRegisterUseCase)
+    {
+        _userRegisterUseCase = userRegisterUseCase;
+    }
+
+    [HttpPost]
+    [ProducesResponseType(typeof(UserRegisterResponseJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> Register([FromBody] UserRegisterRequestJson req)
+    {
+        await _userRegisterUseCase.Execute(req);
+        return Created();
+    }
+}

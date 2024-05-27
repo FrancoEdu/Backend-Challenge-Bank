@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\desafio_backend.Application\desafio_backend.Application.csproj" />
     <ProjectReference Include="..\desafio_backend.Communication\desafio_backend.Communication.csproj" />
     <ProjectReference Include="..\desafio_backend.Exception\desafio_backend.Exception.csproj" />

@@ -117,11 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ACCOUNT_TYPE_INVALID" xml:space="preserve">
+    <value>O tipo de conta está inválido</value>
+  </data>
+  <data name="ALREADY_EXISTS_CPF" xml:space="preserve">
+    <value>Já existe uma conta cadastrada com esse CPF/CNPJ</value>
+  </data>
+  <data name="ALREADY_EXISTS_EMAIL" xml:space="preserve">
+    <value>Já existe uma conta cadastrada com esse Email</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>O formato do email não é válido</value>
+  </data>
+  <data name="EMAIL_REQUIRED" xml:space="preserve">
+    <value>O email é obrigatório</value>
+  </data>
   <data name="INSUFFICIENT_FUNDS" xml:space="preserve">
     <value>Saldo insuficiente.</value>
   </data>
+  <data name="NAME_REQUIRED" xml:space="preserve">
+    <value>O nome é obrigatório</value>
+  </data>
   <data name="PAYMENT_TYPE_NOT_VALID" xml:space="preserve">
     <value>O pagamento não é válido.</value>
+  </data>
+  <data name="PWD_EXCEED_MAX" xml:space="preserve">
+    <value>A senha deve ter tamanho máximo de 16 caracteres</value>
+  </data>
+  <data name="PWD_MINIMUN_LENGTH" xml:space="preserve">
+    <value>A senha deve ter tamanho mínimo de 8 caracteres</value>
+  </data>
+  <data name="PWD_NOT_CONTAIN_LEAST" xml:space="preserve">
+    <value>A senha não contém ao menos um caractér especial</value>
+  </data>
+  <data name="PWD_NOT_CONTAIN_LOW_LETTER" xml:space="preserve">
+    <value>A senha não contém ao menos uma letra minúscula</value>
+  </data>
+  <data name="PWD_NOT_CONTAIN_NUMBER" xml:space="preserve">
+    <value>A senha não contém ao menos um número</value>
+  </data>
+  <data name="PWD_NOT_CONTAIN_UP_LETTER" xml:space="preserve">
+    <value>A senha não contém ao menos uma letra maíuscula</value>
+  </data>
+  <data name="PWD_REQUIRED" xml:space="preserve">
+    <value>A senha é obrigatória</value>
   </data>
   <data name="UNAUTHORIZED_TO_TRANSFER" xml:space="preserve">
     <value>Você não é autorizado para realizar transferência</value>

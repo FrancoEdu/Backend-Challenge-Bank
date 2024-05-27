@@ -61,6 +61,51 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O tipo de conta está inválido.
+        /// </summary>
+        public static string ACCOUNT_TYPE_INVALID {
+            get {
+                return ResourceManager.GetString("ACCOUNT_TYPE_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Já existe uma conta cadastrada com esse CPF/CNPJ.
+        /// </summary>
+        public static string ALREADY_EXISTS_CPF {
+            get {
+                return ResourceManager.GetString("ALREADY_EXISTS_CPF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Já existe uma conta cadastrada com esse Email.
+        /// </summary>
+        public static string ALREADY_EXISTS_EMAIL {
+            get {
+                return ResourceManager.GetString("ALREADY_EXISTS_EMAIL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O formato do email não é válido.
+        /// </summary>
+        public static string EMAIL_INVALID {
+            get {
+                return ResourceManager.GetString("EMAIL_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O email é obrigatório.
+        /// </summary>
+        public static string EMAIL_REQUIRED {
+            get {
+                return ResourceManager.GetString("EMAIL_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Saldo insuficiente..
         /// </summary>
         public static string INSUFFICIENT_FUNDS {
@@ -70,11 +115,83 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O nome é obrigatório.
+        /// </summary>
+        public static string NAME_REQUIRED {
+            get {
+                return ResourceManager.GetString("NAME_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a O pagamento não é válido..
         /// </summary>
         public static string PAYMENT_TYPE_NOT_VALID {
             get {
                 return ResourceManager.GetString("PAYMENT_TYPE_NOT_VALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve ter tamanho máximo de 16 caracteres.
+        /// </summary>
+        public static string PWD_EXCEED_MAX {
+            get {
+                return ResourceManager.GetString("PWD_EXCEED_MAX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve ter tamanho mínimo de 8 caracteres.
+        /// </summary>
+        public static string PWD_MINIMUN_LENGTH {
+            get {
+                return ResourceManager.GetString("PWD_MINIMUN_LENGTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos um caractér especial.
+        /// </summary>
+        public static string PWD_NOT_CONTAIN_LEAST {
+            get {
+                return ResourceManager.GetString("PWD_NOT_CONTAIN_LEAST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos uma letra minúscula.
+        /// </summary>
+        public static string PWD_NOT_CONTAIN_LOW_LETTER {
+            get {
+                return ResourceManager.GetString("PWD_NOT_CONTAIN_LOW_LETTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos um número.
+        /// </summary>
+        public static string PWD_NOT_CONTAIN_NUMBER {
+            get {
+                return ResourceManager.GetString("PWD_NOT_CONTAIN_NUMBER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos uma letra maíuscula.
+        /// </summary>
+        public static string PWD_NOT_CONTAIN_UP_LETTER {
+            get {
+                return ResourceManager.GetString("PWD_NOT_CONTAIN_UP_LETTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha é obrigatória.
+        /// </summary>
+        public static string PWD_REQUIRED {
+            get {
+                return ResourceManager.GetString("PWD_REQUIRED", resourceCulture);
             }
         }
         

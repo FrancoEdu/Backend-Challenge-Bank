@@ -1,4 +1,5 @@
 ﻿using desafio_backend.Application.Mapper;
+using desafio_backend.Application.UseCase.Register;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace desafio_backend.Application;
@@ -17,12 +18,10 @@ public static class DependencyInjectionExtension
 
     private static void AddUseCases(IServiceCollection services)
     {
-        #region Expense useCases
+        #region User useCases
         
-        #endregion Expense useCases
+        services.AddScoped<IUserRegisterUseCase, UserRegisterUseCase>();
 
-        #region Report useCases
-        
-        #endregion Report useCases
+        #endregion User useCases
     }
 }
