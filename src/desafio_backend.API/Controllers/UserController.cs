@@ -18,6 +18,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
+    [Route("create")]
     [ProducesResponseType(typeof(UserRegisterResponseJson), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> Register([FromBody] UserRegisterRequestJson req)
