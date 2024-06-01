@@ -18,7 +18,6 @@ builder.Services.AddApplication();
 
 var app = builder.Build();
 
-// Translate middleware
 app.UseMiddleware<CultureMiddleware>();
 
 if (app.Environment.IsDevelopment())
@@ -29,6 +28,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseHealthChecks("/health");

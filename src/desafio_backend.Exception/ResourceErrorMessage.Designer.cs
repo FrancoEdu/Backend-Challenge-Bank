@@ -61,7 +61,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a O tipo de conta está inválido.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O tipo de conta está inválido..
         /// </summary>
         public static string ACCOUNT_TYPE_INVALID {
             get {
@@ -70,16 +70,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Já existe uma conta cadastrada com esse CPF/CNPJ.
-        /// </summary>
-        public static string ALREADY_EXISTS_CPF {
-            get {
-                return ResourceManager.GetString("ALREADY_EXISTS_CPF", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Já existe uma conta cadastrada com esse Email.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Já existe uma conta cadastrada com esse Email..
         /// </summary>
         public static string ALREADY_EXISTS_EMAIL {
             get {
@@ -88,7 +79,34 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a O formato do email não é válido.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O CNPJ é inválido..
+        /// </summary>
+        public static string CNPJ_INVALID {
+            get {
+                return ResourceManager.GetString("CNPJ_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O CPF é inválido..
+        /// </summary>
+        public static string CPF_INVALID {
+            get {
+                return ResourceManager.GetString("CPF_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O CPF/CNPJ é obrigatório..
+        /// </summary>
+        public static string CPF_REQUIRED {
+            get {
+                return ResourceManager.GetString("CPF_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O formato do email não é válido..
         /// </summary>
         public static string EMAIL_INVALID {
             get {
@@ -97,7 +115,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a O email é obrigatório.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O email é obrigatório..
         /// </summary>
         public static string EMAIL_REQUIRED {
             get {
@@ -115,11 +133,20 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a O nome é obrigatório.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O nome é obrigatório..
         /// </summary>
         public static string NAME_REQUIRED {
             get {
                 return ResourceManager.GetString("NAME_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a As senhas não conhecidem, tente novamente..
+        /// </summary>
+        public static string PASSWORD_NOT_EQUALS {
+            get {
+                return ResourceManager.GetString("PASSWORD_NOT_EQUALS", resourceCulture);
             }
         }
         
@@ -133,7 +160,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve ter tamanho máximo de 16 caracteres.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve ter tamanho máximo de 16 caracteres..
         /// </summary>
         public static string PWD_EXCEED_MAX {
             get {
@@ -142,7 +169,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve ter tamanho mínimo de 8 caracteres.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve ter tamanho mínimo de 8 caracteres..
         /// </summary>
         public static string PWD_MINIMUN_LENGTH {
             get {
@@ -151,7 +178,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos um caractér especial.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos um caractér especial..
         /// </summary>
         public static string PWD_NOT_CONTAIN_LEAST {
             get {
@@ -160,7 +187,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos uma letra minúscula.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos uma letra minúscula..
         /// </summary>
         public static string PWD_NOT_CONTAIN_LOW_LETTER {
             get {
@@ -169,7 +196,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos um número.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos um número..
         /// </summary>
         public static string PWD_NOT_CONTAIN_NUMBER {
             get {
@@ -178,7 +205,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos uma letra maíuscula.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não contém ao menos uma letra maíuscula..
         /// </summary>
         public static string PWD_NOT_CONTAIN_UP_LETTER {
             get {
@@ -187,7 +214,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha é obrigatória.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha é obrigatória..
         /// </summary>
         public static string PWD_REQUIRED {
             get {
@@ -196,7 +223,7 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Você não é autorizado para realizar transferência.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Você não é autorizado para realizar transferência..
         /// </summary>
         public static string UNAUTHORIZED_TO_TRANSFER {
             get {
@@ -219,6 +246,33 @@ namespace desafio_backend.Exception {
         public static string UNKNOWN_RECIPIENT {
             get {
                 return ResourceManager.GetString("UNKNOWN_RECIPIENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O CNPJ já está em uso..
+        /// </summary>
+        public static string USER_CNPJ_ALREADY_EXISTS {
+            get {
+                return ResourceManager.GetString("USER_CNPJ_ALREADY_EXISTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O CPF já está em uso..
+        /// </summary>
+        public static string USER_CPF_ALREADY_EXISTS {
+            get {
+                return ResourceManager.GetString("USER_CPF_ALREADY_EXISTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Credenciais inválidas..
+        /// </summary>
+        public static string USER_LOGIN_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("USER_LOGIN_NOT_FOUND", resourceCulture);
             }
         }
         

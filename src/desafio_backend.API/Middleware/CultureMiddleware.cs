@@ -14,7 +14,7 @@ public class CultureMiddleware
     {
         var supportedLanguages = CultureInfo.GetCultures(CultureTypes.AllCultures).ToList();
         var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
-        var cultureInfo = new CultureInfo("en");
+        var cultureInfo = new CultureInfo("pt-BR");
 
         if (string.IsNullOrWhiteSpace(requestedCulture) == false
             && supportedLanguages.Exists(l => l.Name.Equals(requestedCulture)))

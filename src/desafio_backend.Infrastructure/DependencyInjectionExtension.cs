@@ -1,10 +1,13 @@
 ﻿using desafio_backend.Domain;
+using desafio_backend.Domain.Repositories.Auth;
 using desafio_backend.Domain.Repositories.Users;
+using desafio_backend.Infrastructure.Repositories.Auth;
 using desafio_backend.Infrastructure.Repositories.Users;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -23,13 +26,16 @@ public static class DependencyInjectionExtension
     private static void AddRepositories(IServiceCollection services)
     {
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<IAuthRepository, AuthRepository>();
         services.AddScoped<IUserWriteOnlyRepository, UserRepository>();
+        services.AddScoped<IUserReadOnlyRepository, UserRepository>();
     }
 
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<DesafioDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("AppConnection")));
+            options.UseSqlServer(configuration.GetConnectionString("AppConnection"))
+            .LogTo(Console.WriteLine, LogLevel.Information));    
     }
 
     private static void AddAuthentication(IServiceCollection services, IConfiguration configuration)
@@ -40,16 +46,20 @@ public static class DependencyInjectionExtension
             opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
         }).AddJwtBearer(opt =>
         {
-            opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+            opt.TokenValidationParameters = new TokenValidationParameters
             {
+                ValidateAudience = true,
+                ValidateIssuer = true,
                 ValidateLifetime = true,
                 ValidateIssuerSigningKey = true,
+
+                ValidIssuer = configuration["jwt:issuer"],
+                ValidAudience = configuration["jwt:audience"],
                 IssuerSigningKey = new SymmetricSecurityKey(
                         Encoding.UTF8.GetBytes(configuration["jwt:secretKey"]!)),
                 ClockSkew = TimeSpan.Zero
             };
         });
     }
-
     #endregion Private Methods
 }

@@ -1,4 +1,5 @@
 ﻿using desafio_backend.Application.Mapper;
+using desafio_backend.Application.UseCase.Auth;
 using desafio_backend.Application.UseCase.Register;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -21,6 +22,7 @@ public static class DependencyInjectionExtension
         #region User useCases
         
         services.AddScoped<IUserRegisterUseCase, UserRegisterUseCase>();
+        services.AddScoped<IAuthUseCase, AuthUseCase>();
 
         #endregion User useCases
     }

@@ -5,8 +5,8 @@ namespace desafio_backend.Infrastructure;
 
 public class DesafioDbContext : DbContext
 {
-    public DesafioDbContext(DbContextOptions options) : base(options) { }
+    public DesafioDbContext(DbContextOptions<DesafioDbContext> options) : base(options) { }
 
-    public DbSet<User> User { get; set; }
+    public DbSet<User> Users { get; set; }
     public DbSet<Transfer> Transfer { get; set; }
 }

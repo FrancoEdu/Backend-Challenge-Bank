@@ -118,58 +118,76 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ACCOUNT_TYPE_INVALID" xml:space="preserve">
-    <value>O tipo de conta está inválido</value>
-  </data>
-  <data name="ALREADY_EXISTS_CPF" xml:space="preserve">
-    <value>Já existe uma conta cadastrada com esse CPF/CNPJ</value>
+    <value>O tipo de conta está inválido.</value>
   </data>
   <data name="ALREADY_EXISTS_EMAIL" xml:space="preserve">
-    <value>Já existe uma conta cadastrada com esse Email</value>
+    <value>Já existe uma conta cadastrada com esse Email.</value>
+  </data>
+  <data name="CNPJ_INVALID" xml:space="preserve">
+    <value>O CNPJ é inválido.</value>
+  </data>
+  <data name="CPF_INVALID" xml:space="preserve">
+    <value>O CPF é inválido.</value>
+  </data>
+  <data name="CPF_REQUIRED" xml:space="preserve">
+    <value>O CPF/CNPJ é obrigatório.</value>
   </data>
   <data name="EMAIL_INVALID" xml:space="preserve">
-    <value>O formato do email não é válido</value>
+    <value>O formato do email não é válido.</value>
   </data>
   <data name="EMAIL_REQUIRED" xml:space="preserve">
-    <value>O email é obrigatório</value>
+    <value>O email é obrigatório.</value>
   </data>
   <data name="INSUFFICIENT_FUNDS" xml:space="preserve">
     <value>Saldo insuficiente.</value>
   </data>
   <data name="NAME_REQUIRED" xml:space="preserve">
-    <value>O nome é obrigatório</value>
+    <value>O nome é obrigatório.</value>
+  </data>
+  <data name="PASSWORD_NOT_EQUALS" xml:space="preserve">
+    <value>As senhas não conhecidem, tente novamente.</value>
   </data>
   <data name="PAYMENT_TYPE_NOT_VALID" xml:space="preserve">
     <value>O pagamento não é válido.</value>
   </data>
   <data name="PWD_EXCEED_MAX" xml:space="preserve">
-    <value>A senha deve ter tamanho máximo de 16 caracteres</value>
+    <value>A senha deve ter tamanho máximo de 16 caracteres.</value>
   </data>
   <data name="PWD_MINIMUN_LENGTH" xml:space="preserve">
-    <value>A senha deve ter tamanho mínimo de 8 caracteres</value>
+    <value>A senha deve ter tamanho mínimo de 8 caracteres.</value>
   </data>
   <data name="PWD_NOT_CONTAIN_LEAST" xml:space="preserve">
-    <value>A senha não contém ao menos um caractér especial</value>
+    <value>A senha não contém ao menos um caractér especial.</value>
   </data>
   <data name="PWD_NOT_CONTAIN_LOW_LETTER" xml:space="preserve">
-    <value>A senha não contém ao menos uma letra minúscula</value>
+    <value>A senha não contém ao menos uma letra minúscula.</value>
   </data>
   <data name="PWD_NOT_CONTAIN_NUMBER" xml:space="preserve">
-    <value>A senha não contém ao menos um número</value>
+    <value>A senha não contém ao menos um número.</value>
   </data>
   <data name="PWD_NOT_CONTAIN_UP_LETTER" xml:space="preserve">
-    <value>A senha não contém ao menos uma letra maíuscula</value>
+    <value>A senha não contém ao menos uma letra maíuscula.</value>
   </data>
   <data name="PWD_REQUIRED" xml:space="preserve">
-    <value>A senha é obrigatória</value>
+    <value>A senha é obrigatória.</value>
   </data>
   <data name="UNAUTHORIZED_TO_TRANSFER" xml:space="preserve">
-    <value>Você não é autorizado para realizar transferência</value>
+    <value>Você não é autorizado para realizar transferência.</value>
   </data>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Erro desconhecido.</value>
   </data>
   <data name="UNKNOWN_RECIPIENT" xml:space="preserve">
     <value>Destinatário desconhecido.</value>
+  </data>
+  <data name="USER_CNPJ_ALREADY_EXISTS" xml:space="preserve">
+    <value>O CNPJ já está em uso.</value>
+  </data>
+  <data name="USER_CPF_ALREADY_EXISTS" xml:space="preserve">
+    <value>O CPF já está em uso.</value>
+  </data>
+  <data name="USER_LOGIN_NOT_FOUND" xml:space="preserve">
+    <value>Credenciais inválidas.</value>
   </data>
   <data name="VALUE_GREATHER_THAN_ZERO" xml:space="preserve">
     <value>O valor de transferência precisa ser maior que zero.</value>
