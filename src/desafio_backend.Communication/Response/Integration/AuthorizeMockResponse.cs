@@ -1,4 +1,4 @@
-﻿namespace desafio_backend.Communication.Response.Mock;
+﻿namespace desafio_backend.Communication.Response.Integration;
 public class AuthorizeMockResponse
 {
     public string Status { get; set; } = string.Empty;
