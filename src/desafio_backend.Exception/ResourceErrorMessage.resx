@@ -138,14 +138,26 @@
   <data name="EMAIL_REQUIRED" xml:space="preserve">
     <value>O email é obrigatório.</value>
   </data>
+  <data name="INSUFFICIENT_BALANCE" xml:space="preserve">
+    <value>Saldo insuficiente, a tranferência não foi concluída.</value>
+  </data>
   <data name="INSUFFICIENT_FUNDS" xml:space="preserve">
     <value>Saldo insuficiente.</value>
   </data>
   <data name="NAME_REQUIRED" xml:space="preserve">
     <value>O nome é obrigatório.</value>
   </data>
+  <data name="NOT_AUTHORIZED_TRANSFER" xml:space="preserve">
+    <value>A transferência não foi autorizada, tente novamente mais tarde.</value>
+  </data>
   <data name="PASSWORD_NOT_EQUALS" xml:space="preserve">
     <value>As senhas não conhecidem, tente novamente.</value>
+  </data>
+  <data name="PAYEE_ID_REQUIRED" xml:space="preserve">
+    <value>O identificador do Beneficiário é obrigatório.</value>
+  </data>
+  <data name="PAYER_NOT_FOUND" xml:space="preserve">
+    <value>Pagador desconhecido.</value>
   </data>
   <data name="PAYMENT_TYPE_NOT_VALID" xml:space="preserve">
     <value>O pagamento não é válido.</value>
@@ -171,8 +183,14 @@
   <data name="PWD_REQUIRED" xml:space="preserve">
     <value>A senha é obrigatória.</value>
   </data>
+  <data name="TRANSFERR_VALUE" xml:space="preserve">
+    <value>O valor da transferência é obrigatório.</value>
+  </data>
   <data name="UNAUTHORIZED_TO_TRANSFER" xml:space="preserve">
     <value>Você não é autorizado para realizar transferência.</value>
+  </data>
+  <data name="UNAVAILABLE_SERVICE_NOTIFY" xml:space="preserve">
+    <value>Nossos serviços estão temporarimente indisponíveis, tente novamente mais tarde.</value>
   </data>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Erro desconhecido.</value>

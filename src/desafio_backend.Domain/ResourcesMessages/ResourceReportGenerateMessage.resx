@@ -156,6 +156,9 @@
   <data name="SHOPKEEPER" xml:space="preserve">
     <value>Lojista</value>
   </data>
+  <data name="SUCCESS_TRANSFER" xml:space="preserve">
+    <value>A tranferência foi realizada com sucesso.</value>
+  </data>
   <data name="TITLE" xml:space="preserve">
     <value>Título</value>
   </data>

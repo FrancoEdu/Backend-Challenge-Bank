@@ -2,14 +2,14 @@
 
 namespace desafio_backend.Domain;
 
-public class Transfer
+public class Transfer(long payer, long payee, decimal value)
 {
-  public long TransferId { get; set; }
-  public long Payer { get; set; }
-  public long Payee { get; set; }
-  public decimal Value { get; set; }
-  public DateTime TransferDate { get; set; }
-  public PaymentType PaymentType { get; set; } 
-  public virtual User PayerUser { get; set; }
-  public virtual User PayeeUser { get; set; }
+    public long TransferId { get; private set; }
+    public long Payer { get; private set; } = payer;
+    public long Payee { get; private set; } = payee;
+    public decimal Value { get; private set; } = value;
+    public DateTime TransferDate { get; private set; } = DateTime.Now;
+    public PaymentType PaymentType { get; private set; } = PaymentType.EletronicTransfer;
+    public virtual User PayerUser { get; private set; }
+    public virtual User PayeeUser { get; private set; }
 }

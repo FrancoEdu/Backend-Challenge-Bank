@@ -9,7 +9,7 @@ public class User
     public string Email { get; private set; } = string.Empty;
     public string CpnjCpf { get; set; } = string.Empty;
     public AccountType AccountType { get; set; }
-    public decimal Amount { get; private set; } = decimal.Zero;
+    public decimal Amount { get; set; } = decimal.Zero;
     public byte[] PasswordSalt { get; set; }
     public byte[] PasswordHash { get; set; }
     public DateTime CreatedAt { get; private set; } = DateTime.Now;
@@ -26,5 +26,10 @@ public class User
     {
         var stringReplace = c.Replace(".", "").Replace("-", "").Replace("/", "");
         CpnjCpf = stringReplace;
+    }
+
+    public void UpdateValueAmount (decimal value)
+    {
+        Amount += (value);
     }
 }

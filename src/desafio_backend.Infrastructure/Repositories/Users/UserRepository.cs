@@ -17,6 +17,11 @@ public class UserRepository : IUserWriteOnlyRepository, IUserReadOnlyRepository
        await _dbContext.Users.AddAsync(user);
     }
 
+    public void UpdateUserAmountValue(User user)
+    {
+        _dbContext.Users.Update(user);
+    }
+
     public async Task<User?> GetByCpfCnpjAsync(string cpfCnpj)
     {
         return await _dbContext
@@ -32,6 +37,15 @@ public class UserRepository : IUserWriteOnlyRepository, IUserReadOnlyRepository
             .Users
             .AsNoTracking()
             .Where(x => x.Email.ToLower().Equals(email.ToLower()))
+            .FirstOrDefaultAsync();
+    }
+
+    public async Task<User?> GetByIdAsync(long id)
+    {
+        return await _dbContext
+            .Users
+            .AsNoTracking()
+            .Where(x => x.UserId == id)
             .FirstOrDefaultAsync();
     }
 }

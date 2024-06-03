@@ -3,4 +3,5 @@
 public interface IUserWriteOnlyRepository
 {
     Task Add(User user);
+    void UpdateUserAmountValue(User user);
 }

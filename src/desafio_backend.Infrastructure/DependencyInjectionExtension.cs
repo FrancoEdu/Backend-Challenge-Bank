@@ -1,7 +1,9 @@
 ﻿using desafio_backend.Domain;
 using desafio_backend.Domain.Repositories.Auth;
+using desafio_backend.Domain.Repositories.Transfers;
 using desafio_backend.Domain.Repositories.Users;
 using desafio_backend.Infrastructure.Repositories.Auth;
+using desafio_backend.Infrastructure.Repositories.Transfers;
 using desafio_backend.Infrastructure.Repositories.Users;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -26,9 +28,13 @@ public static class DependencyInjectionExtension
     private static void AddRepositories(IServiceCollection services)
     {
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+
         services.AddScoped<IAuthRepository, AuthRepository>();
+        
         services.AddScoped<IUserWriteOnlyRepository, UserRepository>();
         services.AddScoped<IUserReadOnlyRepository, UserRepository>();
+
+        services.AddScoped<ITransferWriteOnlyRepository, TransferRepository>();
     }
 
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)

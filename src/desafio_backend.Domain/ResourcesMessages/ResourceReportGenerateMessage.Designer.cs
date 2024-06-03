@@ -178,6 +178,15 @@ namespace desafio_backend.Domain.ResourcesMessages {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A tranferência foi realizada com sucesso..
+        /// </summary>
+        public static string SUCCESS_TRANSFER {
+            get {
+                return ResourceManager.GetString("SUCCESS_TRANSFER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Título.
         /// </summary>
         public static string TITLE {

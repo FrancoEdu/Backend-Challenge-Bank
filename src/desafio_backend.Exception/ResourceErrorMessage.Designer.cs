@@ -124,6 +124,15 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Saldo insuficiente, a tranferência não foi concluída..
+        /// </summary>
+        public static string INSUFFICIENT_BALANCE {
+            get {
+                return ResourceManager.GetString("INSUFFICIENT_BALANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Saldo insuficiente..
         /// </summary>
         public static string INSUFFICIENT_FUNDS {
@@ -142,11 +151,38 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A transferência não foi autorizada, tente novamente mais tarde..
+        /// </summary>
+        public static string NOT_AUTHORIZED_TRANSFER {
+            get {
+                return ResourceManager.GetString("NOT_AUTHORIZED_TRANSFER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a As senhas não conhecidem, tente novamente..
         /// </summary>
         public static string PASSWORD_NOT_EQUALS {
             get {
                 return ResourceManager.GetString("PASSWORD_NOT_EQUALS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O identificador do Beneficiário é obrigatório..
+        /// </summary>
+        public static string PAYEE_ID_REQUIRED {
+            get {
+                return ResourceManager.GetString("PAYEE_ID_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Pagador desconhecido..
+        /// </summary>
+        public static string PAYER_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("PAYER_NOT_FOUND", resourceCulture);
             }
         }
         
@@ -223,11 +259,29 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O valor da transferência é obrigatório..
+        /// </summary>
+        public static string TRANSFERR_VALUE {
+            get {
+                return ResourceManager.GetString("TRANSFERR_VALUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Você não é autorizado para realizar transferência..
         /// </summary>
         public static string UNAUTHORIZED_TO_TRANSFER {
             get {
                 return ResourceManager.GetString("UNAUTHORIZED_TO_TRANSFER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nossos serviços estão temporarimente indisponíveis, tente novamente mais tarde..
+        /// </summary>
+        public static string UNAVAILABLE_SERVICE_NOTIFY {
+            get {
+                return ResourceManager.GetString("UNAVAILABLE_SERVICE_NOTIFY", resourceCulture);
             }
         }
         
