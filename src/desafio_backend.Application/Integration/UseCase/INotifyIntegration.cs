@@ -3,5 +3,5 @@
 namespace desafio_backend.Application.Integration.UseCase;
 public interface INotifyIntegration
 {
-    Task<NotifyMockErrorResponse> NotifyTransfer();
+    Task<bool> NotifyTransfer();
 }

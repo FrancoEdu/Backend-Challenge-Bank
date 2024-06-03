@@ -3,5 +3,5 @@
 namespace desafio_backend.Application.Integration.UseCase;
 public interface IAuthorizeIntegration
 {
-    Task<AuthorizeMockResponse> AuthorizeTransfer();
+    Task<bool> AuthorizeTransfer();
 }

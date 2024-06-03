@@ -11,14 +11,9 @@ public class NotifyIntegration : INotifyIntegration
     {
         _notifyRefit = notifyRefit;
     }
-    public async Task<NotifyMockErrorResponse> NotifyTransfer()
+    public async Task<bool> NotifyTransfer()
     {
         var response = await _notifyRefit.NotifyTransfer();
-        if (!response.IsSuccessStatusCode)
-        {
-            var res = JsonSerializer.Deserialize<NotifyMockErrorResponse>(response.Error.Content!);
-            return res!;
-        }
-        return response.Content!;
+        return response.IsSuccessStatusCode ? true : false;
     }
 }

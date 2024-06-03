@@ -1,6 +1,4 @@
 ﻿using desafio_backend.Application.Integration.Refit;
-using desafio_backend.Communication.Response.Integration;
-using System.Text.Json;
 
 namespace desafio_backend.Application.Integration.UseCase;
 public class AuthorizeIntegration : IAuthorizeIntegration
@@ -11,15 +9,9 @@ public class AuthorizeIntegration : IAuthorizeIntegration
         _refit = refit;
     }
 
-    public async Task<AuthorizeMockResponse> AuthorizeTransfer()
+    public async Task<bool> AuthorizeTransfer()
     {
         var response = await _refit.AuthorizeTransfer();
-        if (!response.IsSuccessStatusCode)
-        {
-            var res = JsonSerializer.Deserialize<AuthorizeMockResponse>(response.Error.Content!);
-            return res!;
-        }
-
-        return response.Content!;
+        return response.IsSuccessStatusCode ? true : false;
     }
 }
