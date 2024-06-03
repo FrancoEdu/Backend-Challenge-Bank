@@ -151,6 +151,15 @@ namespace desafio_backend.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não é permitido transferir para você mesmo..
+        /// </summary>
+        public static string NOT_ALLOWED_TRANSFER {
+            get {
+                return ResourceManager.GetString("NOT_ALLOWED_TRANSFER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a A transferência não foi autorizada, tente novamente mais tarde..
         /// </summary>
         public static string NOT_AUTHORIZED_TRANSFER {

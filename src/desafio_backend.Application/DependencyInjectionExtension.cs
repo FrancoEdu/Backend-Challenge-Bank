@@ -3,6 +3,7 @@ using desafio_backend.Application.Integration.UseCase;
 using desafio_backend.Application.Mapper;
 using desafio_backend.Application.UseCase.Auth;
 using desafio_backend.Application.UseCase.Register;
+using desafio_backend.Application.UseCase.Transfers;
 using Microsoft.Extensions.DependencyInjection;
 using Refit;
 
@@ -28,6 +29,8 @@ public static class DependencyInjectionExtension
 
         services.AddScoped<IAuthorizeIntegration, AuthorizeIntegration>();
         services.AddScoped<INotifyIntegration, NotifyIntegration>();
+
+        services.AddScoped<ITransferUseCase, TransferUseCase>();
     }
 
     private static void AddRefitClient(IServiceCollection services)

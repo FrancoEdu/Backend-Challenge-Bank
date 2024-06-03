@@ -37,6 +37,8 @@ public class TransferUseCase : ITransferUseCase
     {
         Validate(transfer);
 
+        if(transfer.Payee == payerId) throw new NotAllowedTransferException(ResourceErrorMessage.NOT_ALLOWED_TRANSFER);
+
         var payer = await _userReadOnlyRepository.GetByIdAsync(payerId) ?? throw new NotFoundException(ResourceErrorMessage.PAYER_NOT_FOUND);
         var payee = await _userReadOnlyRepository.GetByIdAsync(transfer.Payee) ?? throw new NotFoundException(ResourceErrorMessage.UNKNOWN_RECIPIENT);
 

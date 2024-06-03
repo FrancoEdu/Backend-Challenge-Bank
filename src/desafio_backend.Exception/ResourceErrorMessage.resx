@@ -147,6 +147,9 @@
   <data name="NAME_REQUIRED" xml:space="preserve">
     <value>O nome é obrigatório.</value>
   </data>
+  <data name="NOT_ALLOWED_TRANSFER" xml:space="preserve">
+    <value>Não é permitido transferir para você mesmo.</value>
+  </data>
   <data name="NOT_AUTHORIZED_TRANSFER" xml:space="preserve">
     <value>A transferência não foi autorizada, tente novamente mais tarde.</value>
   </data>

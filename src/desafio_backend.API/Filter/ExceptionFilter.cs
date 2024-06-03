@@ -34,7 +34,7 @@ public class ExceptionFilter : IExceptionFilter
     {
         var errorResponse = new ResponseErrorJson(ResourceErrorMessage.UNKNOWN_ERROR);
         context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
-        context.Result = new ObjectResult(errorResponse);
+        context.Result = new ObjectResult(context.Exception);
     }
 
     #endregion Private methods
