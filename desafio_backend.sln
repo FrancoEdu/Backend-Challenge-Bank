@@ -4,10 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{99B9F871-F88C-495B-AEE0-14CACF7BB462}"
-	ProjectSection(SolutionItems) = preProject
-		Dockerfile = Dockerfile
-		docker-compose.yml = docker-compose.yml
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "desafio_backend.API", "src\desafio_backend.API\desafio_backend.API.csproj", "{746AE115-65A7-4FB3-80FF-24557CD4925C}"
 EndProject
