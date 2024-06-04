@@ -10,6 +10,8 @@ public class Transfer
     public decimal Value { get; private set; }
     public DateTime TransferDate { get; private set; } = DateTime.Now;
     public PaymentType PaymentType { get; private set; } = PaymentType.EletronicTransfer;
+    public User PayerUser { get; set; }
+    public User PayeeUser { get; set; }
 
     public Transfer() { }
 

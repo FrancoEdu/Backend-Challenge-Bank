@@ -13,6 +13,8 @@ public class User
     public byte[] PasswordSalt { get; set; }
     public byte[] PasswordHash { get; set; }
     public DateTime CreatedAt { get; private set; } = DateTime.Now;
+    public ICollection<Transfer> PayeeTransfers { get; set; }
+    public ICollection<Transfer> PayerTransfers { get; set; }
 
     public User() { }
     

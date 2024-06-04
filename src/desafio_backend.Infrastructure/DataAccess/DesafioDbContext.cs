@@ -9,4 +9,10 @@ public class DesafioDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
     public DbSet<Transfer> Transfer { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(DesafioDbContext).Assembly);
+    }
 }
