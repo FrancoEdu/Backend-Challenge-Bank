@@ -1,4 +1,5 @@
 # Desafio backend
+Este repositório tem como solução introdutória, ao problema e desafio proposto pelo [PicPay][pic-pay-challenge]
 ## Objetivo: PicPay Simplificado
 
 O PicPay Simplificado é uma plataforma de pagamentos simplificada. Nela é possível depositar e realizar transferências
@@ -47,6 +48,7 @@ Para obter uma cópia local funcionando, siga estes passos simples.
 <!-- Links -->
 [dot-net-sdk]: https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 [docker-install]: https://docs.docker.com/desktop/install/windows-install/
+[pic-pay-challenge]: https://github.com/PicPay/picpay-desafio-backend
 
 <!-- Badges -->
 [badge-dot-net]: https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff&style=for-the-badge
