@@ -22,7 +22,7 @@ services:
     container_name: desafio_backend.database
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=Morango%564
+      - MSSQL_SA_PASSWORD=DesafioBack%564
     ports:
       - "1433:1433"
 
@@ -33,4 +33,4 @@ services:
       - sqlserver
     volumes:
       - ./init.sql:/tmp/init.sql
-    command: /bin/bash -c "/opt/mssql-tools/bin/sqlcmd -S sqlserver -U sa -P Morango%564 -d master -i /tmp/init.sql"
+    command: /bin/bash -c "/opt/mssql-tools/bin/sqlcmd -S sqlserver -U sa -P DesafioBack%564 -d master -i /tmp/init.sql"
