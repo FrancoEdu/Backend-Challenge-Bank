@@ -8,8 +8,7 @@ transferências entre eles.
 ### Features
 
 - **Domain-Driven Design (DDD)**: Estrutura modular que facilita o entendimento e a manutenção do domínio da aplicação.
-- **Testes de Unidade**: Testes abrangentes com FluentAssertions para garantir a funcionalidade e a qualidade.
-- **Geração de Relatórios**: Capacidade de exportar relatórios detalhados para **PDF e Excel**, oferecendo uma análise visual e eficaz das despesas.
+- **Autenticação e Autotização**: Possibilidade de autenticação, assim somente sendo possível a transferência se autenticado e autorizado
 - **RESTful API com Documentação Swagger**: Interface documentada que facilita a integração e o teste por parte dos desenvolvedores.
 
 ### Construído com
@@ -17,8 +16,10 @@ transferências entre eles.
 ![badge-dot-net]
 ![badge-windows]
 ![badge-visual-studio]
-![badge-mysql]
 ![badge-swagger]
+![badge-docker]
+![badge-sql-server]
+![badge-JWT]
 
 ## Getting Started
 
@@ -52,3 +53,6 @@ Para obter uma cópia local funcionando, siga estes passos simples.
 [badge-windows]: https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=fff&style=for-the-badge
 [badge-visual-studio]: https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=visualstudio&logoColor=fff&style=for-the-badge
 [badge-swagger]: https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=000&style=for-the-badge
+[badge-docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[badge-sql-server]: https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white
+[badge-JWT]: https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens
