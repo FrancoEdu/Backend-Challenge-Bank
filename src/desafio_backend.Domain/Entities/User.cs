@@ -9,7 +9,7 @@ public class User
     public string Email { get; private set; } = string.Empty;
     public string CpnjCpf { get; set; } = string.Empty;
     public AccountType AccountType { get; set; }
-    public decimal Amount { get; set; } = decimal.Zero;
+    public decimal Amount { get; set; } = 1000;
     public byte[] PasswordSalt { get; set; }
     public byte[] PasswordHash { get; set; }
     public DateTime CreatedAt { get; private set; } = DateTime.Now;

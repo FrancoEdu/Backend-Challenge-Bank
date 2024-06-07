@@ -22,6 +22,8 @@ public class TransferController : ControllerBase
     [Authorize(Roles = "CommonUser")]
     [ProducesResponseType(typeof(TransferResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status503ServiceUnavailable)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> Transfer(TransferRequest transfer)
     {
         var userIdClaim = User.FindFirst(ClaimTypes.Hash)?.Value;
