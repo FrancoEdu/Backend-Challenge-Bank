@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "desafio_backend.Exception",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "desafio_backend.Infrastructure", "src\desafio_backend.Infrastructure\desafio_backend.Infrastructure.csproj", "{07322FFB-871C-4263-AE87-46914A6EB7FE}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4759A91D-4F43-4187-B51E-FABC4B0BA6F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{07322FFB-871C-4263-AE87-46914A6EB7FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07322FFB-871C-4263-AE87-46914A6EB7FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07322FFB-871C-4263-AE87-46914A6EB7FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4759A91D-4F43-4187-B51E-FABC4B0BA6F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4759A91D-4F43-4187-B51E-FABC4B0BA6F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4759A91D-4F43-4187-B51E-FABC4B0BA6F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4759A91D-4F43-4187-B51E-FABC4B0BA6F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

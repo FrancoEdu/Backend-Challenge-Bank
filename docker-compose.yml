@@ -1,0 +1,36 @@
+version: '3.4'
+
+volumes:
+  sqlserver_data:
+
+services:
+  desafio_backend.api:
+    image: desafiobackendapi
+    container_name: desafio_backend.api
+    build:
+      context: .
+      dockerfile: src/desafio_backend.API/Dockerfile
+    ports:
+      - "5000:5000" 
+      - "5001:5001"
+    depends_on:
+      - sqlserver
+      - mssqltools
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: desafio_backend.database
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Morango%564
+    ports:
+      - "1433:1433"
+
+  mssqltools:
+    image: mcr.microsoft.com/mssql-tools
+    container_name: desafio_backend.mssqltools
+    depends_on:
+      - sqlserver
+    volumes:
+      - ./init.sql:/tmp/init.sql
+    command: /bin/bash -c "/opt/mssql-tools/bin/sqlcmd -S sqlserver -U sa -P Morango%564 -d master -i /tmp/init.sql"
