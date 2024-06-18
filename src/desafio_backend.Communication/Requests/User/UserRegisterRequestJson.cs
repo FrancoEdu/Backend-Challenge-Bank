@@ -1,5 +1,4 @@
 ﻿using desafio_backend.Communication.Enums;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace desafio_backend.Communication.Requests.User;
 public class UserRegisterRequestJson
